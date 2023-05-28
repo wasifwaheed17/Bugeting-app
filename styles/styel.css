@@ -1,22 +1,30 @@
+*{
+    /* margin-left: 30px; */
+}
 .f1 {
-    background-color:white;
+    background-color: white;
     height: 200px;
     width: 300px;
     padding: 25px;
     display: flex;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: 50px;
+    margin-left:300px ;
 
 }
 .sp1{
-    margin: 25px 25px 25px 10px;
-
+    width: 800px;
+    margin: 25px 25px 25px 0px;
 }
+
+
 .f11 {
     display: flex;
     /* justify-content: space-between; */
     flex-direction: column;
     align-items: flex-start;
 }
+
 /*  */
 
 #b1 {
@@ -39,7 +47,8 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-#b2{
+
+#b2 {
     width: 100%;
     background-color: #009879;
     color: white;
@@ -49,16 +58,18 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.container{
+
+.container {
     max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+    /* margin-left: auto; */
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
-.stable{
-    border-collapse:collapse ;
+
+.stable {
+    border-collapse: collapse;
     margin: 25px 0;
     font-size: 1.2em;
     font-family: sans-serif;
@@ -66,24 +77,60 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 
 }
- .stable thead tr {
+
+.stable thead tr {
     background-color: #009879;
     color: #ffffff;
     text-align: left;
 }
-.stable th td{
+
+.stable th td {
     padding: 12px 15px;
     /* text-align: center; */
 
 }
-.stable tbody tr{
+
+.stable tbody tr {
     border-bottom: 1px solid #dddddd;
 
 }
+
 .stable tbody tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
 
 .stable tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
+}
+
+
+.container1 {
+    max-width: 1000px;
+    /* margin-left: auto; */
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.stable1 {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+}
+.stable1 thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.stable1 tbody tr td {
+    padding: 12px 15px;
+    color: white;
+    background-color: #009879;
+    /* text-align: center; */
 }

@@ -6,6 +6,7 @@ function addBudget(event) {
     monBudget = parseInt(budgetInput.value);
     budgetInput.value = ''; // Clearing the input field
     console.log(monBudget);
+    t();
 }
 
 const exp = [];
@@ -32,6 +33,8 @@ function addExpenses(event) {
     tamoun.value = '';
     displayExpenses();
     crbudget();
+    b();
+    e();
 }
 
 function displayExpenses() {
@@ -103,3 +106,26 @@ function displayExpenses() {
   }
 //   const remainingBudget = crbudget();
 //   console.log("Remaining Budget:", remainingBudget);
+
+// function overviewds() {
+//   const expenseTable = document.getElementById('ods');
+//   const tbody = expenseTable.querySelector('tbody');
+//   tbody.innerHTML = ''; // Clearing existing table data
+// }
+
+function t (){
+  let g = document.getElementById("tb")
+  g.textContent = monBudget;
+}
+
+function b (){
+  let bud = crbudget();
+  let b = document.getElementById("balance")
+  b.textContent = bud;
+}
+function e (){
+  let ex = crbudget();
+  let nesw =  monBudget - ex;
+  let nes = document.getElementById("expenses")
+  nes.textContent =nesw ;
+}

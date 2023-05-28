@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles/styel.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="f1">
+        <form class="f11">
+            <label for="mbudget">Monthly Budget:</label>
+            <input class="c1" type="number" id="mbudget" placeholder="Enter your budget">
+            <button onclick="addBudget(event)" id="b1">Add Budget</button>
+        </form>
+    </div>
+    <div>
+        <form class="f11">
+            <label for="Ddate">Due date</label>
+            <input class="c1" type="date" id="Ddate" required>
+            <label for="tamount">Total Amount</label>
+            <input class="c1" type="number" id="tamount" required>
+            <label for="ctgr">Category</label>
+            <select id="ctgr" class="c1" required>
+                <option value="Resturant and cafe">Resturant and cafe</option>
+                <option value="Clothes and Shopping">Clothes and Shopping</option>
+                <option value="Credit and Loans">Credit and Loans</option>
+                <option value="Gift Cards">Gift Cards</option>
+            </select>
+            <label for="Desc">Description</label>
+            <input class="c1" type="text" id="Desc">
+            <label for="Pdate">Payment Date</label>
+            <input class="c1" type="date" id="Pdate" required>
+            <button onclick="addExpenses(event)" id="b2">Add Expenses</button>
+        </form>
+    </div>
+    <div class="container">
+        <table id="expenseslist" class="stable">
+            <thead>
+                <tr>
+                    <th>Due date</th>
+                    <th>Total Amount</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Payment Date</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+
+        <!-- <table id="expensesTable">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="expensesTableBody">
+             Rows will be dynamically added here -->
+        <!-- </tbody>
+          </table>  -->
+
+
+    </div>
+
+    <script src="rec.js"></script>
+</body>
+
+</html>

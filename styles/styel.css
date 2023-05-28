@@ -1,0 +1,82 @@
+.f1 {
+    background-color: aqua;
+    height: 300px;
+    width: 400px;
+    padding: 25px;
+    display: flex;
+
+}
+
+.f11 {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+/*  */
+
+#b1 {
+    margin: 20px 20px 20px 0px;
+    color: white;
+    background-color: blue;
+    height: 40px;
+    width: 130px;
+}
+
+.c1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#b2{
+    width: 100%;
+    background-color: #009879;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container{
+    max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.stable{
+    border-collapse:collapse ;
+    margin: 25px 0;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+ .stable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.stable th td{
+    padding: 12px 15px;
+    /* text-align: center; */
+
+}
+.stable tbody tr{
+    border-bottom: 1px solid #dddddd;
+
+}
+.stable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.stable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

@@ -18,6 +18,7 @@ function addBudget(event) {
     e();
 }
 
+
 const exp = [];
 function addExpenses(event) {
     event.preventDefault();

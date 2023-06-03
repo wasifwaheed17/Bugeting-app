@@ -6,10 +6,16 @@ function addBudget(event) {
     if(budgetInput.value === ""){
         alert("please fill the feild")
     }
+    if(budgetInput.value<=0){
+      alert("please fill valid amount bigger than 0");
+      location.reload();
+    }
     monBudget = parseInt(budgetInput.value);
     budgetInput.value = ''; // Clearing the input field
     console.log(monBudget);
     t();
+    b();
+    e();
 }
 
 const exp = [];
@@ -24,10 +30,17 @@ function addExpenses(event) {
       alert("please fill the feild");
       return;
     }
-    // if(isNaN(tamoun)){
-    //   //console.error("error");
+    if (tamoun.value.length < 4) {
+      alert("Please enter up to 3 digits for the expense amount");
+      return;
+    }
+    if(tamoun.value<=0   ){
+      alert("please fill valid amount bigger than 0");
+    }
+    if(tamoun.value>=100000){
+      alert("please enter less amount than 100000");
 
-    // }
+    }
     const expn = {
         Desc: descri.value,
         Ddate: dueDate.value,
@@ -61,7 +74,7 @@ function displayExpenses() {
     const catgCell = document.createElement('td');
     const dCell = document.createElement('td');
     const pdateCell = document.createElement('td');
-    const actionCell = document.createElement('td'); // New cell for action buttons
+    const actionCell = document.createElement('td'); 
 
     ddateCell.textContent = expn.Ddate;
     tamCell.textContent = expn.tamount;
@@ -180,6 +193,8 @@ function editExpense(index) {
   
   displayExpenses();
   crbudget();
+  b();
+  e();
 }
 
 
@@ -190,4 +205,6 @@ function deleteExpense(index) {
   
   displayExpenses();
   crbudget();
+  b();
+  e();
 }

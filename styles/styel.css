@@ -4,11 +4,14 @@
     height: 200px;
     width: 300px;
     padding: 25px;
-    display: flex;
+    /* display: flex; */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-top: 50px;
     margin-left:300px ;
 
+}
+.y1{
+    padding-bottom: 25px;
 }
 .sp1{
     width: 800px;
@@ -117,6 +120,7 @@
     font-family: sans-serif;
     min-width: 800px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+   
 
 
 }
